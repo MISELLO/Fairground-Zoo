@@ -44,9 +44,8 @@ func main() {
 			os.Exit(1)
 		}
 
-		fmt.Printf("		<a href=\"./original/%s.png\" target=\"_blank\" title=\"%s\">\n", id, name)
-		fmt.Printf("			<img src=\"./mini/%s-mini.png\" alt=\"%s\">\n", id, name)
-		fmt.Println("		</a>")
+		fmt.Printf("		<a href=\"./original/%s.png\" target=\"_blank\" title=\"%s\">", id, name)
+		fmt.Printf("<img src=\"./mini/%s-mini.png\" alt=\"%s\"></a>\n", id, name)
 	}
 
 	fmt.Println("	</body>")
